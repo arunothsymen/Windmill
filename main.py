@@ -26,48 +26,99 @@ if(app_mode=="Home"):
     st.markdown("""
     Welcome to the IoT-Driven Wind Energy Solutions Platform! 🌬️⚡
     
-    Our mission is to optimize wind energy generation and utilization through cutting-edge IoT and machine learning technologies. By predicting energy production and consumption, we help ensure a more efficient and reliable energy supply. Join us in revolutionizing renewable energy management!
+    Our mission is to optimize wind energy generation and utilization through cutting-edge IoT, machine learning, and cloud technologies. By predicting energy production and consumption, we aim to enhance energy efficiency and reliability, contributing to a more sustainable future. Join us in revolutionizing renewable energy management!
     
-    ### How It Works
-    ###### How It Works
-    Our system collects real-time data from wind turbines, including energy generation, consumption patterns, and environmental factors.
+    ### Technologies used:
+    - **Internet of Things (IoT)**
+    - **Machine Learning Models**
+    - **Streamlit - Frontend**
     
-    ###### How It Works
-    Our system collects real-time data from wind turbines, including energy generation, consumption patterns, and environmental factors.
-
-    ###### How It Works
-    Our system collects real-time data from wind turbines, including energy generation, consumption patterns, and environmental factors.
-
-    ###### How It Works
-    Our system collects real-time data from wind turbines, including energy generation, consumption patterns, and environmental factors.
-            
                 
+    ### How It Works
+    ###### Data Collection:
+    Our system collects real-time data from wind turbines, including key metrics such as energy generated, energy consumed, input voltages, and output voltages, along with environmental factors.
+    
+    ###### Analyze Data:
+    Navigate to the Input Prediction or Output Prediction page and select a date for prediction. The system will process the data using advanced algorithms to predict future energy generation and utilization.
+    
+    ###### Predictive Analysis:
+    Our machine learning models analyze historical data to forecast wind energy production and consumption on specific dates, helping you make informed decisions about energy management.
+
+    ###### Results and Recommendations:
+    View detailed predictions and actionable insights that allow you to optimize wind energy usage, reduce waste, and ensure a reliable energy supply.
+
+    ### Components and Flow
+    ##### Components Used:
+    - **Windmill**
+    - **2 Channel 5V Relay Module**
+    - **Two-way USB Type-C Cable**
+    - **TP4056**
+    - **Resistors 7 kΩ ±5% (J)**
+    - **Lithium-Ion Battery - 4000mAh*2 (8000mAh)**
+    - **Battery Holders**
+    - **Connecting Wires**
+    - **Multiplexer**
+    - **Voltage Sensor**
+    - **ESP 8266**
+    - **Type B Data Sharing Cable**
+    - **12cm×18cm PCB Board (3 nos)**
+    """)
+    image_path = "Cheat-Sheet.jpg"
+    st.image(image_path,use_column_width=True)
+    st.markdown("""                    
     ### Why Choose Us?
-    - **Accuracy:** Our system utilizes state-of-the-art machine learning techniques for accurate disease detection.
+    - **Advanced Technology:** Our platform leverages the latest in IoT, machine learning, and cloud computing to deliver precise and reliable predictions.
     - **User-Friendly:** Simple and intuitive interface for seamless user experience.
     - **Fast and Efficient:** Receive results in seconds, allowing for quick decision-making.
 
     ### Get Started
-    Click on the **Disease Recognition** page in the sidebar to upload an image and experience the power of our Plant Disease Recognition System!
+    Click on the **Input Prediction** or **Output Prediction** page in the sidebar and select a date for prediction, and experience the power of our IoT-Driven Wind Energy Solutions!
 
     ### About Us
-    Learn more about the creator, on the **About** page.
+    Learn more about the creator and the inspiration behind this innovative project on the **About** page.
     """)
 
 #About Project
 elif(app_mode=="About"):
     st.header("About Creator")
-    image_path = "Final_Pic.JPG"
-    st.image(image_path,width=250)
-    st.markdown("""
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        image_path = "Final_Pic.JPG"
+        st.image(image_path,width=200)
+        st.markdown("""
                 #### Dhillipkumar M
                 Christ University, Bangalore
                 #### Contact Details
                 Phone Number : 7639902361\n
                 Email : dhillipkumar2001@gmail.com\n
-                Linkedin : www.linkedin.com/in/dhillipkumar-m-893854193\n
-                GitHub : https://github.com/Dhillipkumar
+                Linkedin : [Dhillipkumar](www.linkedin.com/in/dhillipkumar-m-893854193)\n
+                GitHub : [Dhillipkumar](https://github.com/Dhillipkumar)
 
+                """)
+    with col2:
+        image_path = "SYMEN.jpg" 
+        st.image(image_path, width=200)
+        st.markdown("""
+                #### Arunoth Symen A
+                Christ University, Bangalore
+                #### Contact Details
+                - **Phone:** 9150418081\n
+                - **Email:** arunothsymen1@gmail.com\n
+                - **LinkedIn:** [Arunoth Symen](https://www.linkedin.com/in/arunothsymen)\n
+                - **GitHub:** [Arunoth Symen](https://github.com/arunothsymen)
+                """)
+
+    with col3:
+        image_path = "2347148.JPG"  
+        st.image(image_path, width=200)
+        st.markdown("""
+                #### P Santhosh Kumar
+                Christ University, Bangalore
+                #### Contact Details
+                - **Phone:** 6379314514\n
+                - **Email:** santhoshkumar150822@gmail.com\n
+                - **LinkedIn:** [Santhosh Kumar](https://www.linkedin.com/in/santhosh-kumar-150822-p)\n
+                - **GitHub:** [Santhosh Kumar](https://github.com/SanthoshKumar150822)
                 """)
 
 #Prediction Page

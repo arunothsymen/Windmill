@@ -121,7 +121,7 @@ elif(app_mode=="Output Prediction"):
     st.title("Windmill Power Utilization Prediction")
 
 # User input for target date
-    target_date = st.date_input("Select a date to predict power utilization", datetime(2024, 1, 31))
+    target_date = st.date_input("Select a date to predict power utilization", datetime(2024, 8, 16))
 
 # Convert target date to a timestamp and find the forecast index
     forecast_date = (pd.Timestamp(target_date) - daily_generation.index[-1]).days

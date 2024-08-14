@@ -3,8 +3,6 @@ import tensorflow as tf
 import numpy as np
 import pandas as pd
 import pickle
-from sklearn.linear_model import LinearRegression
-import numpy as np
 from datetime import datetime
 
 #Tensorflow Model Prediction

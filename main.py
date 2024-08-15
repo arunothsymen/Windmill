@@ -9,7 +9,7 @@ from datetime import datetime
 
 #Sidebar
 st.sidebar.title("Dashboard")
-app_mode = st.sidebar.selectbox("Select Page",["Home","About","Input Prediction","Output Prediction"])
+app_mode = st.sidebar.selectbox("Select Page",["Home","About","Input Prediction","Output Prediction","Visualization"])
 
 #Main Page
 if(app_mode=="Home"):
@@ -178,3 +178,22 @@ elif(app_mode=="Output Prediction"):
         st.write(f"Predicted power utilization on {target_date}: {predicted_value:.4f} V")
     else:
         st.write("The selected date is out of the forecast range. Please select a closer date.")
+
+elif(app_mode=="Visualization"):
+    st.title("Visualization of IoT-Driven Wind Energy Solutions")
+    st.markdown("""                    
+    ### Input Data Visualization: """)
+    st.components.v1.html(
+    """
+    <iframe src="https://thingspeak.com/channels/2626627/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" width="450" height="500"></iframe>
+    """,
+    height=250 
+)
+    st.markdown("""                    
+    ### Output Data Visualization: """)
+    st.components.v1.html(
+    """
+    <iframe src="https://thingspeak.com/channels/2626627/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" width="450" height="500"></iframe>
+    """,
+    height=250 
+)

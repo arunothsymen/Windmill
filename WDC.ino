@@ -3,8 +3,8 @@
 #include <ESP8266HTTPClient.h>
 #include <WiFiClientSecure.h>
 
-const char* ssid = "moto g82 5G";
-const char* password = "999999999";
+const char* ssid = "";
+const char* password = "";
 
 // ThingSpeak Write API Key and URL
 const String tsApiKey = "YW2UCSA5BU61O0WK";  // Replace with your ThingSpeak API key

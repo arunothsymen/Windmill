@@ -76,42 +76,40 @@ elif(app_mode=="About"):
     st.header("About Creator")
     col1, col2, col3 = st.columns(3)
     with col1:
-        image_path = "Final_Pic.JPG"
-        st.image(image_path,width=200)
-        st.markdown("""
-                #### Dhillipkumar M
-                Christ University, Bangalore
-                #### Contact Details
-                Phone Number : 7639902361\n
-                Email : dhillipkumar2001@gmail.com\n
-                Linkedin : [Dhillipkumar](www.linkedin.com/in/dhillipkumar-m-893854193)\n
-                GitHub : [Dhillipkumar](https://github.com/Dhillipkumar)
-
-                """)
-    with col2:
         image_path = "SYMEN.jpg" 
         st.image(image_path, width=200)
         st.markdown("""
                 #### Arunoth Symen A
+                Roll Number: 2347215
                 Christ University, Bangalore
                 #### Contact Details
                 - **Phone:** 9150418081\n
                 - **Email:** arunothsymen1@gmail.com\n
-                - **LinkedIn:** [Arunoth Symen](https://www.linkedin.com/in/arunothsymen)\n
-                - **GitHub:** [Arunoth Symen](https://github.com/arunothsymen)
+                - **LinkedIn:** [Arunoth Symen](https://www.linkedin.com/in/arunothsymen)
+                """)
+
+    with col2:
+        image_path = "2347229.JPG"
+        st.image(image_path,width=200)
+        st.markdown("""
+                #### Kalpana N 
+                Roll Number: 2347229
+                Christ University, Bangalore
+                #### Contact Details
+                Email : kalpana.n@mca.christuniversity.in\n
+                Linkedin : [Kalpana N](https://www.linkedin.com/in/kalpana2803)
                 """)
 
     with col3:
-        image_path = "2347148.JPG"  
+        image_path = "2347247.JPG"  
         st.image(image_path, width=200)
         st.markdown("""
-                #### P Santhosh Kumar
+                #### Priya Dharshini G
+                Roll Number: 2347247
                 Christ University, Bangalore
                 #### Contact Details
-                - **Phone:** 6379314514\n
-                - **Email:** santhoshkumar150822@gmail.com\n
-                - **LinkedIn:** [Santhosh Kumar](https://www.linkedin.com/in/santhosh-kumar-150822-p)\n
-                - **GitHub:** [Santhosh Kumar](https://github.com/SanthoshKumar150822)
+                - **Email:** priya.dharshini@mca.christuniversity.in\n
+                - **LinkedIn:** [Priya Dharshini G](https://www.linkedin.com/in/priya-dharshini-g)
                 """)
 
 #Prediction Page

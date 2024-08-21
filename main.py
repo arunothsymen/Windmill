@@ -83,7 +83,6 @@ elif(app_mode=="About"):
                 Roll Number: 2347215
                 Christ University, Bangalore
                 #### Contact Details
-                - **Phone:** 9150418081\n
                 - **Email:** arunothsymen1@gmail.com\n
                 - **LinkedIn:** [Arunoth Symen](https://www.linkedin.com/in/arunothsymen)
                 """)

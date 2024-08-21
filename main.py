@@ -5,11 +5,9 @@ import pandas as pd
 import pickle
 from datetime import datetime
 
-
-
 #Sidebar
 st.sidebar.title("Dashboard")
-app_mode = st.sidebar.selectbox("Select Page",["Home","About","Input Prediction","Output Prediction","Visualization"])
+app_mode = st.sidebar.selectbox("Select Page",["Home","Input Prediction","Output Prediction","Visualization"])
 
 #Main Page
 if(app_mode=="Home"):
@@ -72,44 +70,44 @@ if(app_mode=="Home"):
     """)
 
 #About Project
-elif(app_mode=="About"):
-    st.header("About Creator")
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        image_path = "SYMEN.jpg" 
-        st.image(image_path, width=200)
-        st.markdown("""
-                #### Arunoth Symen A
-                Roll Number: 2347215
-                Christ University, Bangalore
-                #### Contact Details
-                - **Email:** arunothsymen1@gmail.com\n
-                - **LinkedIn:** [Arunoth Symen](https://www.linkedin.com/in/arunothsymen)
-                """)
+# elif(app_mode=="About"):
+#     st.header("About Creator")
+#     col1, col2, col3 = st.columns(3)
+#     with col1:
+#         image_path = "SYMEN.jpg" 
+#         st.image(image_path, width=200)
+#         st.markdown("""
+#                 #### Arunoth Symen A
+#                 Roll Number: 2347215
+#                 Christ University, Bangalore
+#                 #### Contact Details
+#                 - **Email:** arunothsymen1@gmail.com\n
+#                 - **LinkedIn:** [Arunoth Symen](https://www.linkedin.com/in/arunothsymen)
+#                 """)
 
-    with col2:
-        image_path = "2347229.JPG"
-        st.image(image_path,width=200)
-        st.markdown("""
-                #### Kalpana N 
-                Roll Number: 2347229
-                Christ University, Bangalore
-                #### Contact Details
-                Email : kalpana.n@mca.christuniversity.in\n
-                Linkedin : [Kalpana N](https://www.linkedin.com/in/kalpana2803)
-                """)
+#     with col2:
+#         image_path = "2347229.JPG"
+#         st.image(image_path,width=200)
+#         st.markdown("""
+#                 #### Kalpana N 
+#                 Roll Number: 2347229
+#                 Christ University, Bangalore
+#                 #### Contact Details
+#                 Email : kalpana.n@mca.christuniversity.in\n
+#                 Linkedin : [Kalpana N](https://www.linkedin.com/in/kalpana2803)
+#                 """)
 
-    with col3:
-        image_path = "2347247.JPG"  
-        st.image(image_path, width=200)
-        st.markdown("""
-                #### Priya Dharshini G
-                Roll Number: 2347247
-                Christ University, Bangalore
-                #### Contact Details
-                - **Email:** priya.dharshini@mca.christuniversity.in\n
-                - **LinkedIn:** [Priya Dharshini G](https://www.linkedin.com/in/priya-dharshini-g)
-                """)
+#     with col3:
+#         image_path = "2347247.JPG"  
+#         st.image(image_path, width=200)
+#         st.markdown("""
+#                 #### Priya Dharshini G
+#                 Roll Number: 2347247
+#                 Christ University, Bangalore
+#                 #### Contact Details
+#                 - **Email:** priya.dharshini@mca.christuniversity.in\n
+#                 - **LinkedIn:** [Priya Dharshini G](https://www.linkedin.com/in/priya-dharshini-g)
+#                 """)
 
 #Prediction Page
 elif(app_mode=="Input Prediction"):
